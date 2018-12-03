@@ -1,0 +1,17 @@
+.fontawsome {
+    font-family: 'Spicy Rice', cursive;
+  }
+  
+
+.login {
+    width: 500px;
+    margin: 0 auto;
+}
+.logoImg{
+    margin: 0 auto;
+    width: 60%;
+}
+.property > img {
+    object-fit: cover;
+    height: 300px;
+}
