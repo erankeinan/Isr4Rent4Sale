@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "fname": "Eran",
+            "lname": "Keinan",
+            "email": "eran@keinan.com",
+            "pwd": "1111"
+        },
+        {
+            "id": 2,
+            "fname": "John",
+            "lname": "Doe",
+            "email": "john@john.com",
+            "pwd": "123"
+        }
+    ]
+}
