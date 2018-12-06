@@ -15,3 +15,8 @@
     object-fit: cover;
     height: 300px;
 }
+
+body{
+
+    background-color: beige;
+}
