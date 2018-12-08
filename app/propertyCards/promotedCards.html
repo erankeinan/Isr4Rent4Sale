@@ -5,7 +5,7 @@
         ng-repeat="promoted in promoteds | filter : filterProp" ng-dblclick = "cardclick(promoted)">
         <div class = "card-title text-center capt">
             <h4 >For {{promoted.action}}</h4>
-            <h5 >{{promoted.ptype}} Property</h5>
+            <h5 >{{promoted.btype}} Property</h5>
         </div>
         <img class="card-img-top" ng-src={{promoted.mainPicture}} alt={{promoted.mainPicture}}>
         <h3> {{promoted.askingprice}} </h3>

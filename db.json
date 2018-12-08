@@ -309,7 +309,7 @@
             "btype": "Private",
             "type": "Apartment",
             "action": "Rent",
-            "askingPrice": "9000",
+            "askingprice": "9000",
             "city": "Tel Aviv",
             "Street": "Shenkin 7",
             "neighborhood": "HaNesiyim",

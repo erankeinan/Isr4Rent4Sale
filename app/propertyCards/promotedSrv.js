@@ -9,8 +9,11 @@ app.factory("promotedSrv", function($q, $http) {
         this.btype = plainProp.btype;
         this.type = plainProp.type;
         this.action = plainProp.action;
-        this.askingPrice = plainProp.askingPrice;
-        this.address = plainProp.address;
+        this.askingprice = plainProp.askingprice;
+        this.city = plainProp.city;
+        this.street = plainProp.street;
+        this.neighborhood = plainProp.neighborhood;
+        this.zip = plainProp.zip;
         this.rooms = plainProp.rooms;
         this.Size = plainProp.Size;
         this.floor = plainProp.floor ;
@@ -37,10 +40,7 @@ app.factory("promotedSrv", function($q, $http) {
             async.resolve(promoteds);
         }, function(error) {
             async.reject(error);
-        });
-    
-    
-    
+        });    
     
     
     }
