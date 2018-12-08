@@ -1,0 +1,15 @@
+
+<div class="container-fluid ">
+    <div class="row my-6 card-columns" >
+        <div class="card bg-light col-2 col-sm-6 col-lg-3 mx-2"
+        ng-repeat="promoted in promoteds | filter : filterProp" ng-dblclick = "cardclick(promoted)">
+        <div class = "card-title text-center capt">
+            <h4 >For {{promoted.action}}</h4>
+            <h5 >{{promoted.ptype}} Property</h5>
+        </div>
+        <img class="card-img-top" ng-src={{promoted.himg}} alt={{promoted.himg}}>
+        <h3> {{promoted.price}} </h3>
+        <h3> {{promoted.address}} </h3>
+        </div>   
+    </div>   
+</div>   

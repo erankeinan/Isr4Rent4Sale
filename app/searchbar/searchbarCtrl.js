@@ -9,6 +9,10 @@ app.controller("searchbarCtrl", function($scope, user, $location) {
     //     $location.path("/");
     // }
 
+    $scope.showAddSearch = false;
+    $scope.addvancedSearch = "Advanced search options";
+    $scope.arrow = "fa fa-angle-down";
+
     // $(function() {
         var $tabButtonItem = $('#tab-button li'),
             $tabSelect = $('#tab-select'),
@@ -39,5 +43,23 @@ app.controller("searchbarCtrl", function($scope, user, $location) {
           $(target).show();
         });
     //   });
+
+
+  $scope.isShowAddSearchBar = function() {
+    return $scope.isShowAddSearch;
+}
+
+//toggle on show or not show additionl search form bar
+$scope.toggleAddSearchBar = function() {
+    if ($scope.isShowAddSearch){
+        $scope.isShowAddSearch = false;
+        $scope.addvancedSearch = "Advanced search options";
+        $scope.arrow = "fa fa-angle-down";
+    }else{
+        $scope.isShowAddSearch = true;
+        $scope.addvancedSearch = "Fewer options";
+        $scope.arrow = "fa fa-angle-up";
+    }
+}
 
 });
