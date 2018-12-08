@@ -19,7 +19,7 @@
     "properties": [
         {
             "id": 1,
-            "promotedInd": "Y",
+            "promotedInd": "1",
             "btype": "Business",
             "type": "",
             "action": "Rent",
@@ -41,7 +41,7 @@
         },
         {
             "id": 2,
-            "promotedInd": "Y",
+            "promotedInd": "1",
             "btype": "Private",
             "type": "House",
             "action": "Rent",
@@ -63,7 +63,7 @@
         },
         {
             "id": 3,
-            "promotedInd": "Y",
+            "promotedInd": "1",
             "btype": "Private",
             "type": "Apartment",
             "action": "Rent",
@@ -85,7 +85,7 @@
         },  
         {
             "id": 4,
-            "promotedInd": "N",
+            "promotedInd": "0",
             "btype": "Private",
             "type": "Apartment",
             "action": "Rent",
@@ -107,7 +107,7 @@
         }, 
         {
             "id": 5,
-            "promotedInd": "Y",
+            "promotedInd": "1",
             "btype": "Private",
             "type": "House",
             "action": "Rent",
@@ -129,7 +129,7 @@
         },  
         {
             "id": 6,
-            "promotedInd": "Y",
+            "promotedInd": "1",
             "btype": "Private",
             "type": "House",
             "action": "Rent",
@@ -151,7 +151,7 @@
         },  
         {
             "id": 7,
-            "promotedInd": "Y",
+            "promotedInd": "1",
             "btype": "Business",
             "type": "",
             "action": "Rent",
@@ -173,7 +173,7 @@
         },  
         {
             "id": 8,
-            "promotedInd": "Y",
+            "promotedInd": "1",
             "btype": "Business",
             "type": "",
             "action": "Rent",
@@ -195,7 +195,7 @@
         },    
         {
             "id": 9,
-            "promotedInd": "Y",
+            "promotedInd": "1",
             "btype": "Business",
             "type": "",
             "action": "Rent",
@@ -217,7 +217,7 @@
         },   
         {
             "id": 10,
-            "promotedInd": "N",
+            "promotedInd": "0",
             "btype": "Business",
             "type": "",
             "action": "Rent",
@@ -239,7 +239,7 @@
         }, 
         {
             "id": 11,
-            "promotedInd": "N",
+            "promotedInd": "0",
             "btype": "Private",
             "type": "House",
             "action": "Rent",
@@ -261,7 +261,7 @@
         },    
         {
             "id": 12,
-            "promotedInd": "N",
+            "promotedInd": "0",
             "btype": "Private",
             "type": "House",
             "action": "Rent",
@@ -283,7 +283,7 @@
         },   
         {
             "id": 13,
-            "promotedInd": "N",
+            "promotedInd": "0",
             "btype": "Private",
             "type": "Apartment",
             "action": "Rent",
@@ -305,7 +305,7 @@
         },     
         {
             "id": 14,
-            "promotedInd": "N",
+            "promotedInd": "0",
             "btype": "Private",
             "type": "Apartment",
             "action": "Rent",
