@@ -24,7 +24,9 @@ body{
 }
 
 .jumbotron {
-  background-image: url("./pics/view-of-houses-on-the-street-angra-panoramic-images.jpg");
+  /* background-image: url("./pics/view-of-houses-on-the-street-angra-panoramic-images.jpg"); */
+  background-image: url("./pics/city-lake-hand-watch.jpg");
+
   /* background-image: url("./pics/Dan Panorama exterior picture.jpg"); */
   /* background-image: url("./pics/panoramic-view-haifa-israel-city-260nw-518141593.jpg"); */
   /* background-image: url("./pics/houses on street.jpg"); */
@@ -32,12 +34,16 @@ body{
   /* background-image: url(".pics/2017-04-12-14-39-05-725x334.jpg"); */
   color:white;
   /* background-size: cover; */
-  /* background-position: center; */
+  background-position: center;
 }
-.jumbotron>.container>.row>div>h6 {
+/* .jumbotron>.container>.row>div>h6 {
   color:blue;
-}
+  background-color: white;
+} */
 
+/* .jumbotron>.container>.row>div {
+  margin-bottom: 40px;
+} */
 
 /*search Tab CSS: */
 
@@ -78,7 +84,8 @@ body{
     display: block;
     padding: .5em;
     /* background: #428bca; */
-    background: #1347f3;
+    /* background: #1347f3; */
+    background: purple; 
     border: 1px solid #ddd;
     text-align: center;
     color: white;
@@ -124,6 +131,17 @@ body{
       top: -1px;
       margin-top: 0;
     }
+    .jumbotron {
+      /* background-image: url("./pics/city-lake-hand-watch.jpg"); */
+      background-image: url("./pics/view-of-houses-on-the-street-angra-panoramic-images.jpg");
+      color:white;
+      background-position: left;
+
+    }
+    .jumbotron>.container>.row>div>h6 {
+      color:blue;
+      background-color: white;
+    }
   }
 
   #search-btn {
@@ -148,6 +166,10 @@ body{
     border-image-slice: 100%;
     border-image-repeat: stretch stretch;
     border-image-outset: 0; */
+
+    background: purple; 
+    border-color: purple;
+
   }
 
 /* ****************************** **************/

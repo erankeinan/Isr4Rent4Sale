@@ -5,9 +5,11 @@ app.factory("promotedSrv", function($q, $http) {
 
     function Property(plainProp) {
         this.id = plainProp.id;
+        this.promotedInd = plainProp.promotedInd;
         this.btype = plainProp.btype;
         this.type = plainProp.type;
         this.action = plainProp.action;
+        this.askingPrice = plainProp.askingPrice;
         this.address = plainProp.address;
         this.rooms = plainProp.rooms;
         this.Size = plainProp.Size;
@@ -24,8 +26,8 @@ app.factory("promotedSrv", function($q, $http) {
 
     function getPromotedProp(){
         var async = $q.defer();
-        var PromotedInd = true;
-        var getPromotedPropURL = "http://my-json-server.typicode.com/ekeinan/Isr4Rent4Sale/properties?PromotedInd=" + PromotedInd;
+        var promotedInd = "Y";
+        var getPromotedPropURL = "http://my-json-server.typicode.com/ekeinan/Isr4Rent4Sale/properties?promotedInd=" + promotedInd;
     
         $http.get(getPromotedPropURL).then(function(response) {
             for (var i = 0; i < response.data.length; i++) {
@@ -41,6 +43,11 @@ app.factory("promotedSrv", function($q, $http) {
     
     
     
+    }
+
+    return {
+        getPromotedProp: getPromotedProp
+       
     }
 
 })
