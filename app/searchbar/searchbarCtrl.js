@@ -16,6 +16,7 @@ app.controller("searchbarCtrl", function($scope, user, $location) {
     $scope.searchDistance = "1";
     $scope.searchAdded = "1";
     $scope.searchSortby = "1";
+    $scope.searchPropType = "1";
 
 
     $scope.showAddSearch = false;
