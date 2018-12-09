@@ -36,18 +36,11 @@ body{
   /* background-size: cover; */
   background-position: center;
 }
-/* .jumbotron>.container>.row>div>h6 {
-  color:blue;
-  background-color: white;
-} */
 
-/* .jumbotron>.container>.row>div {
-  margin-bottom: 40px;
-} */
-
+#find{
+  color: purple;
+}
 /*search Tab CSS: */
-
-
   
 /*** PANEL  ***/
 
@@ -198,3 +191,18 @@ body{
 .card {
   max-width: 24.299%;
 }
+
+footer {
+  background-color: lightgray;
+}
+
+#left>ul>li, #right>ul>li, #middle>ul>li  {
+  list-style: none;
+}
+
+#fb-left>ul>li, #fb-right>ul>li, #fb-left>ul> h6  {
+  list-style: none;
+  display: inline-block;
+
+}
+ 
