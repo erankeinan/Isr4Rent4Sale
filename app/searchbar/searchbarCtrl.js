@@ -9,6 +9,15 @@ app.controller("searchbarCtrl", function($scope, user, $location) {
     //     $location.path("/");
     // }
 
+    $scope.searchRooms = "0";
+    $scope.searchPropType = "0";
+    $scope.searchFurniture = "0";
+    $scope.searchRoomMates = "1";
+    $scope.searchDistance = "1";
+    $scope.searchAdded = "1";
+    $scope.searchSortby = "1";
+
+
     $scope.showAddSearch = false;
     $scope.addvancedSearch = "Advanced search options";
     $scope.arrow = "fa fa-angle-down";

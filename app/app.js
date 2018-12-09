@@ -8,12 +8,12 @@ app.config(function($routeProvider) {
         templateUrl: "app/login/login.html", 
         controller: "loginCtrl"
     }).when("/signup", {
-        templateUrl: "#", //todo
+      //  templateUrl: "#", todo
     }).when("/forRent", {
-        templateUrl: "#", //todo
+       // templateUrl: "#", todo
     }).when("/forSale", {
-        templateUrl: "#", //todo
+       // templateUrl: "#", todo
     }).when("/upload" , {
-        templateUrl: "app/home/home.html", //todo
+        templateUrl: "app/home/home.html"
     })
 })

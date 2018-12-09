@@ -2,32 +2,32 @@
     <div class = "form-row">
         <input type="text" class="form-control col" placeholder="e.g. street, city" ng-model="searchText">
     </div>
-    <div class = "form-row mt-4">
-        <div class = "col">
+    <div class = "form-row ">
+        <div class = "col-sm-12 col-lg-3 mt-4">
             <h7>Min Price</h7>
             <i class="fa fa-money" aria-hidden="true"></i>
             <input type="text" class="form-control col" placeholder="No min" ng-model="searchPriceMin">
         </div>
-        <div class = "col">
+        <div class = "col-sm-12 col-lg-3 mt-4">
             <h7>Max Price</h7>
             <input type="text" class="form-control col" placeholder="No Max" ng-model="searchPriceMax">
         </div>
-        <div class = "col">
+        <div class = "col-sm-12 col-lg-3 mt-4">
             <h7>Property type</h7>
             <div class="form-group">
                 <select class="form-control" id="prop1" name="rentproplist" ng-model="searchPropType">
-                    <option selected>Show All</option>
-                    <option>House</option>
-                    <option>Apartment</option>
-                    <option>Farms</option>
+                    <option value="0">Show All</option>
+                    <option value="1">House</option>
+                    <option value="2">Apartment</option>
+                    <option value="3">Farms</option>
                 </select>
             </div> 
         </div>
-        <div class = "col">
+        <div class = "col-sm-12 col-lg-3 mt-4">
             <h7>Bedrooms</h7>
             <div class="form-group">
                 <select class="form-control" id="prop1" name="rentproplist" ng-model="searchRooms">
-                    <option selected value="0">No Min</option>
+                    <option  value="0">No Min</option>
                     <option value="1">1+</option>
                     <option value="2">2+</option>
                     <option value="3">3+</option>
@@ -43,17 +43,17 @@
         <div class="form-group">
             <div class = "form-row mt-4">
                 <h7 class = "col-sm-12 col-md-3 pt-2">Furniture</h7>
-                <select class="col-6 form-control" id="prop1" name="rentproplist" ng-model="searchSortby">
-                    <option value="1" selected>Show all</option>
-                    <option value="2">Furnished</option>
-                    <option value="3">Partially furnished</option>
-                    <option value="4">Unfurnished</option>
+                <select class="col-sm-12 col-md-6 form-control" id="prop1" name="rentproplist" ng-model="searchFurniture">
+                    <option value="0" >Show all</option>
+                    <option value="1">Furnished</option>
+                    <option value="2">Partially furnished</option>
+                    <option value="3">Unfurnished</option>
                 </select>
             </div>       
             <div class = "form-row mt-4">
                 <h7 class = "col-sm-12 col-md-3 pt-2">Room mates</h7>
-                <select class="col-6 form-control" id="prop1" name="rentproplist" ng-model="searchSortby">
-                    <option value="1" selected>Show all</option>
+                <select class="col-sm-12 col-md-6 form-control" id="prop1" name="rentproplist" ng-model="searchRoomMates">
+                    <option value="1" >Show all</option>
                     <option value="2">Shared accomodation</option>
                     <option value="3">Without room mates</option>
                 </select>
@@ -61,8 +61,8 @@
     
             <div class = "form-row mt-4">
                 <h7 class = "col-sm-12 col-md-3 pt-2">Distance from location</h7>
-                <select class="col-6 form-control" id="prop1" name="rentproplist" ng-model="searchDistance">
-                    <option value="1" selected>This area</option>
+                <select class="col-sm-12 col-md-6 form-control" id="prop1" name="rentproplist" ng-model="searchDistance">
+                    <option value="1" >This area</option>
                     <option value="2">Within 500m</option>
                     <option value="3">Within 1KM</option>
                     <option value="4">Within 3KM</option>
@@ -75,8 +75,8 @@
             </div>
             <div class = "form-row mt-4">
                 <h7 class = "col-sm-12 col-md-3 pt-2">Added</h7>
-                <select class="col-6 form-control" id="prop1" name="rentproplist" ng-model="searchAdded">
-                    <option value="1" selected>Anytime</option>
+                <select class="col-sm-12 col-md-6 form-control" id="prop1" name="rentproplist" ng-model="searchAdded">
+                    <option value="1" >Anytime</option>
                     <option value="2">Last 24h</option>
                     <option value="3">Last 3 days</option>
                     <option value="4">Last 7 days</option>
@@ -86,7 +86,7 @@
             </div>
            <div class = "form-row mt-4">
                 <h7 class = "col-sm-12 col-md-3 pt-2">Sort by</h7>
-                <select class="col-6 form-control" id="prop1" name="rentproplist" ng-model="searchSortby">
+                <select class="col-sm-12 col-md-6 form-control" id="prop1" name="rentproplist" ng-model="searchSortby">
                     <option value="1" selected>Most recent</option>
                     <option value="2">Highest price</option>
                     <option value="3">Lowest price</option>
