@@ -30,7 +30,7 @@ app.factory("promotedSrv", function($q, $http) {
     function getPromotedProp(){
         var async = $q.defer();
         var promotedInd = "1";
-        var getPromotedPropURL = "http://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties?promotedInd=" + promotedInd;
+        var getPromotedPropURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties?promotedInd=" + promotedInd;
         var promoteds = [];
 
         $http.get(getPromotedPropURL).then(function(response) {
