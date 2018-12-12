@@ -14,7 +14,8 @@
                 <!-- The slideshow/carousel to show the property images -->
                 <div class="carousel-inner">
                     <div class="carousel-item active" ng-repeat="propImage in propImages" ng-click = "ImgEnlarge(imgItem)">
-                        <img src="./pic/2017-04-12-14-39-05-725x334.jpg" alt="pic1" >
+                        <!-- <img src="./pic/2017-04-12-14-39-05-725x334.jpg" alt="pic1" > -->
+                        <img src="{{propImage}}" alt="pic1" >
                     </div>
                     <!-- <div class="carousel-item">
                         <img src="./pic/houses on street.jpg" alt="pic2">

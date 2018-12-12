@@ -11,7 +11,7 @@ forRentApp.factory("chosenpropSrv", function($http, $log, $q) {
 
         $http.get(propertImagesURL).then(function(response) {
 
-            propImages = response.data.message;                                
+            propImages = response.data.message.pimgs;                                
             var prt = JSON.stringify(response);
             console.log(prt);
 
