@@ -2,6 +2,7 @@ forRentApp.controller("chosenpropCtrl", function($scope, chosenpropSrv, $locatio
 
     $scope.propImages = [];
 
+    $scope.property = {};
 
     // Selected specific property images  
     chosenpropSrv.getPropImages($routeParams.propId).then(function(propImages) {
@@ -15,6 +16,12 @@ forRentApp.controller("chosenpropCtrl", function($scope, chosenpropSrv, $locatio
     $log.error(error);
     });
 
+    chosenpropSrv.getPropDtls($routeParams.propId).then(function(proerty) {
+        console.log("inside " + $routeParams.propId);
+        $scope.property = property;
+        var prt = JSON.stringify($scope.property);
+        console.log(prt);
+    });
 
    $scope.ImgEnlarge = function(imgItem) {
     $scope.currentImg = imgItem;

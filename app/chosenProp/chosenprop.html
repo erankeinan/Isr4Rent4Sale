@@ -36,11 +36,75 @@
 
 
         <!-- The property details -->
-        <div class = "col-4 text-center ">
+        <div class = "col-4  ">
+            <h4>{{property.type}} For {{property.action}}</h4>
+            <h5>{{property.city}}, {{property.street}} {{property.neighborhood}} </h5>
+            <h5>Price: {{property.askingPrice}}</h5>
+        </div> 
+    </div> <!-- end of first row -->
+
+    <div class = "row">
+        <div class = "col-8  ">
+            <div id = "property-deails-tabs">
+                <div class="tabs">
+                        <div class="tab-button-outer">
+                            <ul id="tab-button">
+                                <li><a href="#tab01">Property details</a></li>
+                                <li><a href="#tab02">Map & Nearby</a></li>
+                                <!-- <li><a href="#tab03">Property Prices</a></li> -->
+                            </ul> 
+                        </div>
+                        <div class="tab-select-outer">
+                            <select id="tab-select">
+                                <option value="#tab01">Property details</option>
+                                <option value="#tab02">Map & Nearby</option>
+                            <!-- <option value="#tab03">Property Prices</option> -->
+                            </select>
+                        </div>                            
+                        <div id="tab01" class="tab-contents">
+                            <!-- Property details -->
+                            <h4>Features </h4>
+                            <div class = "row">
+                                <div class = "col-6  ">
+                                    <p> Rooms: {{property.rooms}}  </p>
+                                </div>
+                                <div class = "col-6  ">
+                                    <p> size: {{property.size}} smr (mr^2)</p>
+                                </div>
+                                <div class = "col-6  ">
+                                    <p> floor (if relevant): {{property.floor}} </p>
+                                </div>
+                                <div class = "col-6  ">
+                                    <p> Basement: {{property.basement}} </p>
+                                </div>                                
+                            </div> 
+                            <h4>Description </h4>
+                            <div class = "row">
+                                  <article>
+                                        {{property.desc}}
+                                  </article>  
+                            </div>
+
+                        </div>
+                
+                        <div id="tab02" class="tab-contents">
+                            <!-- Map of area -->
+                        </div>
+                        <!-- <div id="tab03" class="tab-contents">
+                                <h2>Tab 3</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam consequuntur, esse provident impedit minima porro! Laudantium laboriosam culpa quis fugiat ea, architecto velit ab, deserunt rem quibusdam voluptatum.</p>
+                        </div> -->
+                </div>
+                    
+            </div>
+
 
         </div> 
-
+        <div class = "col-4">
+        </div>    
     </div>
+
+
 
 
 </div>

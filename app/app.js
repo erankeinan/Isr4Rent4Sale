@@ -13,7 +13,8 @@ forRentApp.config(function($routeProvider) {
         templateUrl: "app/torent/torent.html",
         controller: "torentCtrl"
     }).when("/forSale", {
-       // templateUrl: "#", todo
+        templateUrl: "app/tosale/tosale.html",
+        controller: "tosaleCtrl"
     }).when("/chosenprop/:propId" , {
         templateUrl: "app/chosenProp/chosenprop.html",
         controller: "chosenpropCtrl"
