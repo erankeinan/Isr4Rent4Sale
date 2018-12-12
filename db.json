@@ -170,30 +170,7 @@
             "desc": "Laxury offices in the most valued place in the Dan area",
             "comments": "",
             "mainPicture": "http://www.forbes.co.il/download/pictures/%D7%94%D7%91%D7%95%D7%A8%D7%A1%D7%94%20%D7%9C%D7%99%D7%94%D7%9C%D7%95%D7%9E%D7%99%D7%9D-%20%D7%A2%D7%A8%D7%99%D7%99%D7%AA%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F%20480.jpg"
-        },  
-        {
-            "id": "8",
-            "promotedInd": "1",
-            "btype": "Business",
-            "type": "",
-            "action": "Rent",
-            "askingPrice": "300000",
-            "city": "Ramat Gan",
-            "street": "HaNasih 10",
-            "neighborhood": "HaBursa",
-            "zip": "921921",
-            "rooms": "",
-            "size": "4000",
-            "floor":"30",
-            "floorsnums": "60",
-            "basement": "",
-            "phone": "0503453455",
-            "email": "john@john.com",
-            "desc": "Laxury offices in the most valued place in the Dan area",
-            "comments": "",
-            "mainPicture": "http://www.forbes.co.il/download/pictures/%D7%94%D7%91%D7%95%D7%A8%D7%A1%D7%94%20%D7%9C%D7%99%D7%94%D7%9C%D7%95%D7%9E%D7%99%D7%9D-%20%D7%A2%D7%A8%D7%99%D7%99%D7%AA%20%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F%20480.jpg"
-        }
-             
+        }             
     ],
     "propertyimages": [
         {
@@ -204,7 +181,7 @@
         },
         {
             "propid": 2,
-            "pimgs":  ["https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%97%D7%95%D7%A5%20%D7%9C%D7%91%D7%99%D7%AA%202.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%98%D7%91%D7%97%204.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%A1%D7%9C%D7%95%D7%9F%202.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%A1%D7%93%D7%A8%D7%95%D7%9F.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%A1%D7%93%D7%A8%D7%95%D7%9F%203.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%97%D7%95%D7%A5%20%D7%9C%D7%91%D7%99%D7%AA.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%97%D7%95%D7%A5%20%D7%9C%D7%91%D7%99%D7%AA%203.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%99%D7%A0%D7%99%D7%91-%D7%A1%D7%9C%D7%95%D7%9E%D7%95%D7%9F-%D7%91%D7%99%D7%AA-%D7%91%D7%9E%D7%95%D7%A9%D7%91-%D7%97%D7%A6%D7%91-0046.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%AA%D7%9B%D7%A0%D7%99%D7%AA%20%D7%97%D7%A6%D7%91-page-001.jpg"]
+            "pimgs":  ["https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%97%D7%95%D7%A5%20%D7%9C%D7%91%D7%99%D7%AA%202.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%98%D7%91%D7%97%204.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%A1%D7%9C%D7%95%D7%9F%202.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%A1%D7%93%D7%A8%D7%95%D7%9F.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%A1%D7%93%D7%A8%D7%95%D7%9F%203.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%97%D7%95%D7%A5%20%D7%9C%D7%91%D7%99%D7%AA.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%9E%D7%97%D7%95%D7%A5%20%D7%9C%D7%91%D7%99%D7%AA%203.jpg", "https://www.bvd.co.il/img/fck/image/design%20pictures/%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%91%D7%AA%D7%99%D7%9D%20%D7%A4%D7%A8%D7%98%D7%99%D7%99%D7%9D/%D7%91%D7%99%D7%AA%20%D7%9E%D7%A2%D7%95%D7%A6%D7%91%20%D7%91%D7%9E%D7%95%D7%A9%D7%91%20%D7%97%D7%A6%D7%91/%D7%99%D7%A0%D7%99%D7%91-%D7%A1%D7%9C%D7%95%D7%9E%D7%95%D7%9F-%D7%91%D7%99%D7%AA-%D7%91%D7%9E%D7%95%D7%A9%D7%91-%D7%97%D7%A6%D7%91-0046.jpg"]
 
         }
     ]

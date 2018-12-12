@@ -4,7 +4,7 @@ forRentApp.controller("chosenpropCtrl", function($scope, chosenpropSrv, $locatio
 
 
     // Selected specific property images  
-    chosenPropSrv.getPropImages($routeParams.propId).then(function(propImages) {
+    chosenpropSrv.getPropImages($routeParams.propId).then(function(propImages) {
         console.log("inside " + $routeParams.propId);
         
         $scope.propImages = propImages;
