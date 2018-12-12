@@ -3,6 +3,7 @@
 <div class="container">
     <div class = "row">
         <div class = "col-8 ">
+            <h5>Click the image to enlarge</h5>
             <div id="demo" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
@@ -12,7 +13,7 @@
                 </ul>
                 <!-- The slideshow/carousel to show the property images -->
                 <div class="carousel-inner">
-                    <div class="carousel-item active" ng-repeat="propImage in propImages" ng-dblclick = "ImgEnlarge(imgItem)">
+                    <div class="carousel-item active" ng-repeat="propImage in propImages" ng-click = "ImgEnlarge(imgItem)">
                         <img src="./pic/2017-04-12-14-39-05-725x334.jpg" alt="pic1" >
                     </div>
                     <!-- <div class="carousel-item">
@@ -44,3 +45,28 @@
 </div>
 
 <footer-dir></footer-dir>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="propModal" >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img  class="w-100 img-fluid" ng-src={{currentImg}} alt="breed picture">
+            </div>
+        
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+    
+        </div>
+    </div>
+</div>
