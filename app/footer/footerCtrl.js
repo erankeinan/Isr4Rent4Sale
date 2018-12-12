@@ -1,4 +1,4 @@
-app.controller("footerCtrl", function($scope, promotedSrv, $location, $log) {
+forRentApp.controller("footerCtrl", function($scope, promotedSrv, $location, $log) {
 
     $scope.cookiesModal = function() {
         

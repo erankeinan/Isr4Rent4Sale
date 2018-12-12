@@ -1,5 +1,5 @@
 
-app.controller("loginCtrl", function($scope, $location, user) {
+forRentApp.controller("loginCtrl", function($scope, $location, user) {
     
     $scope.email = "eran@keinan.com";
     $scope.pwd = "1111";

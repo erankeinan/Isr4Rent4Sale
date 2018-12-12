@@ -1,4 +1,4 @@
-app.directive("forRentForm", function() {
+forRentApp.directive("forRentForm", function() {
     return {
         templateUrl: "app/searchbar/forRentForm.html",
         controller: "searchbarCtrl"

@@ -1,6 +1,6 @@
-var app = angular.module("forRentApp", ["ngRoute"]);
+var forRentApp = angular.module("forRentApp", ["ngRoute"]);
 
-app.config(function($routeProvider) {
+forRentApp.config(function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl: "app/home/home.html"
@@ -10,9 +10,13 @@ app.config(function($routeProvider) {
     }).when("/signup", {
       //  templateUrl: "#", todo
     }).when("/forRent", {
-       // templateUrl: "#", todo
+        templateUrl: "app/torent/torent.html",
+        controller: "torentCtrl"
     }).when("/forSale", {
        // templateUrl: "#", todo
+    }).when("/chosenprop/:propId" , {
+        templateUrl: "app/chosenProp/chosenprop.html",
+        controller: "chosenpropCtrl"
     }).when("/upload" , {
         templateUrl: "app/home/home.html"
     })

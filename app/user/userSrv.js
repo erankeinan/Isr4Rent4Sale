@@ -1,5 +1,5 @@
 
-app.factory("user", function($q, $http) {
+forRentApp.factory("user", function($q, $http) {
 
     var activeUser = null;
     // new User( {

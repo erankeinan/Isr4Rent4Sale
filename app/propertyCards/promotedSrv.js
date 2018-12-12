@@ -1,4 +1,4 @@
-app.factory("promotedSrv", function($q, $http) {
+forRentApp.factory("promotedSrv", function($q, $http) {
 
 
     // var promoteds = {};

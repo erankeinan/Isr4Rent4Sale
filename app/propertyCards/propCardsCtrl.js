@@ -1,4 +1,4 @@
-app.controller("propCardsCtrl", function($scope, promotedSrv, $location, $log) {
+forRentApp.controller("propCardsCtrl", function($scope, promotedSrv, $location, $log) {
     
     $scope.promoteds = [];
 
@@ -7,6 +7,9 @@ app.controller("propCardsCtrl", function($scope, promotedSrv, $location, $log) {
     }, function(error) {
         $log.error(error);
     });
-
+    $scope.cardclick = function(promoted) {            
+        var propid = promoted.id;
+        $location.path("/chosenprop/" + propid);
+   }
         
 });

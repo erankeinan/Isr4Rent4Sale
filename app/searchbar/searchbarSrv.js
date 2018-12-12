@@ -1,4 +1,4 @@
-app.factory("searchbarSrv", function($q, $http) {
+forRentApp.factory("searchbarSrv", function($q, $http) {
 
 
 
