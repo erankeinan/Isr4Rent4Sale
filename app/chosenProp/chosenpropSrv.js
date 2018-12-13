@@ -11,7 +11,7 @@ forRentApp.factory("chosenpropSrv", function($http, $log, $q) {
 
         $http.get(propertImagesURL).then(function(response) {
 
-            propImages = response.data.message.pimgs;                                
+            propImages = response.data[0].pimgs;                                
             var prt = JSON.stringify(response);
             console.log(prt);
 
@@ -33,19 +33,19 @@ forRentApp.factory("chosenpropSrv", function($http, $log, $q) {
       function getPropDtls(propid) {
       
         var async = $q.defer();   
-        var property = [];
+        // var property = [];
 
         var propertyURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties?id=" + propid;
 
-        console.log(" link: " + propertImagesURL);
+        console.log(" link: " + propertyURL);
 
         $http.get(propertyURL).then(function(response) {
 
-            property = response.data.message;                                
+            var property = response.data[0];                                
             var prt = JSON.stringify(response);
             console.log(prt);
 
-            async.resolve(propImages);
+            async.resolve(property);
 
             }, function(error) {
             // error

@@ -13,22 +13,16 @@
                 </ul>
                 <!-- The slideshow/carousel to show the property images -->
                 <div class="carousel-inner">
-                    <div class="carousel-item active" ng-repeat="propImage in propImages" ng-click = "ImgEnlarge(imgItem)">
+                    <div class="carousel-item" ng-class="{'active' : activeIndex===0}" ng-repeat="propImage in propImages" ng-click = "ImgEnlarge(propImage)">
                         <!-- <img src="./pic/2017-04-12-14-39-05-725x334.jpg" alt="pic1" > -->
                         <img src="{{propImage}}" alt="pic1" >
                     </div>
-                    <!-- <div class="carousel-item">
-                        <img src="./pic/houses on street.jpg" alt="pic2">
-                    </div>
-                    <div class="carousel-item">
-                            <img src="./pic/houses on street.jpg" alt="pic3">
-                    </div> -->
                 </div>
                 <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <a class="carousel-control-prev"  data-slide="prev" ng-click = "prevImg(activeIndex, propImages)">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <a class="carousel-control-next"  data-slide="next" ng-click = "nextImg(activeIndex, propImages)">
                     <span class="carousel-control-next-icon"></span>
                 </a>
             </div> 
@@ -36,10 +30,10 @@
 
 
         <!-- The property details -->
-        <div class = "col-4  ">
+        <div class = "col-4  mt-4">
             <h4>{{property.type}} For {{property.action}}</h4>
             <h5>{{property.city}}, {{property.street}} {{property.neighborhood}} </h5>
-            <h5>Price: {{property.askingPrice}}</h5>
+            <h5>Price: {{property.askingPrice}} NIS</h5>
         </div> 
     </div> <!-- end of first row -->
 
@@ -124,7 +118,7 @@
         
             <!-- Modal body -->
             <div class="modal-body">
-                <img  class="w-100 img-fluid" ng-src={{currentImg}} alt="breed picture">
+                <img  class="w-100 img-fluid" ng-src={{currentImg}} alt="Property image">
             </div>
         
             <!-- Modal footer -->

@@ -1,8 +1,9 @@
-forRentApp.controller("chosenpropCtrl", function($scope, chosenpropSrv, $location, $log) {
+forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenpropSrv, $location, $log) {
 
     $scope.propImages = [];
+    $scope.activeIndex = 0;
 
-    $scope.property = {};
+    // $scope.property = {};
 
     // Selected specific property images  
     chosenpropSrv.getPropImages($routeParams.propId).then(function(propImages) {
@@ -16,13 +17,16 @@ forRentApp.controller("chosenpropCtrl", function($scope, chosenpropSrv, $locatio
     $log.error(error);
     });
 
-    chosenpropSrv.getPropDtls($routeParams.propId).then(function(proerty) {
+
+    chosenpropSrv.getPropDtls($routeParams.propId).then(function(property) {
         console.log("inside " + $routeParams.propId);
         $scope.property = property;
         var prt = JSON.stringify($scope.property);
         console.log(prt);
     });
+ 
 
+  
    $scope.ImgEnlarge = function(imgItem) {
     $scope.currentImg = imgItem;
     $("#propModal").modal({backdrop: true});
@@ -30,4 +34,23 @@ forRentApp.controller("chosenpropCtrl", function($scope, chosenpropSrv, $locatio
   };      
 
 
+  $scope.nextImg = function(activeIndex, propImages) {
+      if (activeIndex === propImages.length -1) {
+        $scope.activeIndex = 0;
+      }
+      else{
+        $scope.activeIndex +=1;
+      }
+    
+  };
+
+  $scope.prevImg = function(activeIndex, propImages) {
+    if (activeIndex === 0) {
+      $scope.activeIndex = propImages.length -1;
+    }
+    else{
+      $scope.activeIndex -=1;
+    }
+  
+};  
 });
