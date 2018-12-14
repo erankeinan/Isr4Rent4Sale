@@ -2,7 +2,8 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
 
     $scope.propImages = [];
     $scope.activeIndex = 0;
-
+    $scope.rentInd = "";
+    
     // $scope.property = {};
 
     // Selected specific property images  
@@ -12,7 +13,7 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
         $scope.propImages = propImages;
         var prt = JSON.stringify($scope.propImages);
         console.log(prt);
-
+      
     }, function(error) {
     $log.error(error);
     });
@@ -21,6 +22,7 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
     chosenpropSrv.getPropDtls($routeParams.propId).then(function(property) {
         console.log("inside " + $routeParams.propId);
         $scope.property = property;
+        if (property.action==='Rent') {$scope.rentInd = 'Monthly'}
         var prt = JSON.stringify($scope.property);
         console.log(prt);
     });
