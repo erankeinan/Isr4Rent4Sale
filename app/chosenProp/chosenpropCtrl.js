@@ -3,7 +3,7 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
     $scope.propImages = [];
     $scope.activeIndex = 0;
     $scope.rentInd = "";
-    
+
     // $scope.property = {};
 
     // Selected specific property images  
@@ -54,5 +54,8 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
       $scope.activeIndex -=1;
     }
   
-};  
+  };  
+
+  
+
 });
