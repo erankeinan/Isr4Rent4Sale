@@ -8,7 +8,8 @@ forRentApp.config(function($routeProvider) {
         templateUrl: "app/login/login.html", 
         controller: "loginCtrl"
     }).when("/signup", {
-      //  templateUrl: "#", todo
+        templateUrl: "app/signup/signup.html", 
+        controller: "signupCtrl"
     }).when("/forRent", {
         templateUrl: "app/torent/torent.html",
         controller: "torentCtrl"

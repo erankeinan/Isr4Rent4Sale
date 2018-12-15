@@ -1,0 +1,31 @@
+<div class="container login mt-5">
+    <h1>Sign up to manage your properties</h1>
+    <!-- <p>or <a href="#">create an account</a></p> -->
+    <!-- <div class="alert alert-danger" role="alert" ng-show="invalidLogin">
+        Invalid email or password
+    </div> -->
+    <form>
+        <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" class="form-control" id="fname" ng-model="fname" onchange=" validateFNameSize()">
+        </div>                       
+        <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" class="form-control" id="lname" ng-model="lname" onchange=" validateLNameSize()">
+        </div>           
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" ng-model="email" onchange="ValidateEmail()">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" ng-model="pwd">
+        </div>
+        <div class="form-group">
+                <label for="cpwd">Confirm Password:</label>
+                <input type="password" class="form-control" id="cpwd" ng-model="cpwd">
+        </div>
+        <button type="button" class="btn btn-success btn-block" ng-click="validateSave()">Submit</button>
+    </form>
+</div>
