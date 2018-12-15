@@ -49,8 +49,8 @@
                         </div>
                         <div class="tab-select-outer">
                             <select id="tab-select">
-                                <option value="">Property details</option>
-                                <option value="">Map & Nearby</option>
+                                <option  ng-click="page='first'">Property details</option>
+                                <option  ng-click="page='second'">Map & Nearby</option>
                             <!-- <option value="#tab03">Property Prices</option> -->
                             </select>
                         </div>                            
@@ -80,8 +80,14 @@
 
                         </div>
                 
-                        <div id="tab02" class="tab-contents" ng-show="page === 'second'">
-                            <!-- Map of area -->map here
+                        <div id="tab02" class="tab-contents" ng-show="page === 'second'" >
+                            <!-- Map of area --><h4>Map here </h4>
+                            <iframe
+                                width="300"
+                                height="150"
+                                frameborder="0" style="border:0"
+                                ng-src="{{googleMapURL}}" allowfullscreen>
+                            </iframe>
                         </div>
                 </div>
                     
@@ -95,6 +101,7 @@
     <br>
 
 </div>
+
 <br>
 <footer-dir></footer-dir>
 

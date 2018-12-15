@@ -1,4 +1,4 @@
-forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenpropSrv, $location, $log) {
+forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenpropSrv, $location, $log, $sce) {
 
     $scope.propImages = [];
     $scope.activeIndex = 0;
@@ -25,6 +25,17 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
         if (property.action==='Rent') {$scope.rentInd = 'Monthly'}
         var prt = JSON.stringify($scope.property);
         console.log(prt);
+
+        var address = $scope.property.street + "," +  $scope.property.city + ",Israel" ;
+        if (address){
+        console.log(address);
+
+        $scope.googleMapURL = $sce.trustAsResourceUrl(
+          "https://www.google.com/maps/embed/v1/place?q="+address+"&key=AIzaSyCbI_-Y0NkPIJ6wLCQNBMpl-fP5x-oNU6o");
+          }else{
+          // $location.path("#"); 
+          }
+
     });
  
 
@@ -56,6 +67,28 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
   
   };  
 
-  
+  // $scope.showmap = function(){
+  //     var address = $scope.property.street + " , " +  $scope.property.city + " , Israel" ;
+  //     if (address){
+  //     console.log(address);
+
+  //     $scope.googleMapURL = $sce.trustAsResourceUrl(
+  //       "https://www.google.com/embed/v1/place?key=AIzaSyCbI_-Y0NkPIJ6wLCQNBMpl-fP5x-oNU6o=" + address);
+  //   }else{
+  //     $location.path("/"); //TODO: to put a message that map is not available
+  //   }
+  // };
+
+
+  // carSrv.getAll().then(function(cars) {
+  //   if (parseInt($routeParams.carIndex) >= 0 && parseInt($routeParams.carIndex) < cars.length) {
+  //     $scope.car = carSrv.getByIndex($routeParams.carIndex);
+  //     $scope.googleMapURL = $sce.trustAsResourceUrl(
+  //       "https://www.google.com/embed/v1/place?key=AIzaSyDYss1RsxvYgPMb80w568QggvjYoTojd6Q&q=" + 
+  //         $scope.car.address);
+  //   } else {
+  //     $location.path("/"); 
+  //   }
+  // });
 
 });
