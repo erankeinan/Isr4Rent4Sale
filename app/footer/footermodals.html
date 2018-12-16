@@ -12,23 +12,23 @@
             <!-- Modal body -->
             <div class="modal-body">
                     <div class="form-group">
-                        <p id="ins1" >To contact our customer service, please leave the following details, and we will come back to you as soon as possible.</p>
-                        <p id="ins2">fields marked with * are mandatory</p>
+                        <p >To contact our customer service, please leave the following details, and we will come back to you as soon as possible.</p>
+                        <p >fields marked with * are mandatory</p>
                         <div class="row">
-                            <label for="firstName" class="txt">* First Name</label>
-                            <input type="text" name="fname" id="firstName" onchange=" validateFNameSize()">
+                            <label for="cntfirstName" class="txt">* First Name</label>
+                            <input type="text" name="fname" id="cntfirstName" onchange=" validateFNameSize()">
                         </div>                        
                         <div class="row">
-                            <label for="name" class="txt">* LAst Name</label>
-                            <input type="text" name="lname" id="lastName" onchange=" validateLNameSize()">
+                            <label for="cntlastName" class="txt">* LAst Name</label>
+                            <input type="text" name="lname" id="cntlastName" onchange=" validateLNameSize()">
                         </div>
                         <div class="row">
-                            <label for="phone" class="txt">* Phone</label>
-                            <input type="text" name="phone" id="phone" onchange=" validatePhone()">
+                            <label for="cntphone" class="txt">* Phone</label>
+                            <input type="text" name="phone" id="cntphone" onchange=" validatePhone()">
                         </div>
                         <div class="row">
-                            <label for="email" class="txt">* E-mail</label>
-                            <input type="email" name="email" id="email" onchange="ValidateEmail()">
+                            <label for="cntemail" class="txt">* E-mail</label>
+                            <input type="email" name="email" id="cntemail" onchange="ValidateEmail()">
                         </div>
                         <div class="row">
                             <textarea id="comments" rows="8" cols="40" value="Comments here" onchange="updateRangeValue()"></textarea>
@@ -38,7 +38,7 @@
         
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button id="subButton" type="button" class="btn btn-success" data-dismiss="modal" onclick="formSubmitted()">Send</button>
+                <button id="cntsubButton" type="button" class="btn btn-success" data-dismiss="modal" onclick="formSubmitted()">Send</button>
             </div>
     
         </div>
