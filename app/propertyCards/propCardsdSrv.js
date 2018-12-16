@@ -1,4 +1,4 @@
-forRentApp.factory("promotedSrv", function($q, $http) {
+forRentApp.factory("propCardsSrv", function($q, $http) {
 
 
     // var promoteds = {};
