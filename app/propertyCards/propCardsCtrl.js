@@ -11,5 +11,12 @@ forRentApp.controller("propCardsCtrl", function($scope, promotedSrv, $location, 
         var propid = promoted.id;
         $location.path("/chosenprop/" + propid);
    }
-        
+       
+   
+   romotedSrv.getPromotedProp().then(function (promoteds) {
+    $scope.promoteds = promoteds;
+    }, function(error) {
+        $log.error(error);
+    });
+
 });

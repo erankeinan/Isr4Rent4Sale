@@ -18,6 +18,7 @@ forRentApp.factory("promotedSrv", function($q, $http) {
         this.size = plainProp.size;
         this.floor = plainProp.floor ;
         this.floorsnums = plainProp.floorsnums ;
+        this.furniture = plainProp.furniture,
         this.basement = plainProp.basement ;
         this.phone = plainProp.phone ;
         this.email = plainProp.email ;
@@ -30,6 +31,8 @@ forRentApp.factory("promotedSrv", function($q, $http) {
     function getPromotedProp(){
         var async = $q.defer();
         var promotedInd = "1";
+
+        
         var getPromotedPropURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties?promotedInd=" + promotedInd;
         var promoteds = [];
 
@@ -47,6 +50,40 @@ forRentApp.factory("promotedSrv", function($q, $http) {
 
         
     }
+
+    
+
+    // function getPromotedPropVars(searchRooms, searchPropType, searchFurniture){
+    //     var async = $q.defer();
+    //     var promotedInd = "1";
+
+    //     var getPromotedPropURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties?promotedInd="+ promotedInd
+    //     + (searchRooms? "&rooms=" + searchRooms:'')
+    //     + (searchPropType? "&type=" + searchPropType:'')
+    //     + (searchFurniture? "&furniture=" + searchFurniture:"");
+
+    //     var promoteds = [];
+
+    //     $http.get(getPromotedPropURL).then(function(response) {
+    //         for (var i = 0; i < response.data.length; i++) {
+    //             var promoted = new Property(response.data[i]);
+    //             promoteds.push(promoted);
+    //         }
+    //         async.resolve(promoteds);
+    //     }, function(error) {
+    //         async.reject(error);
+    //     });    
+    
+    //     return async.promise;
+
+        
+    // }
+
+    // return {
+    //     getPromotedProp: getPromotedProp,
+    //     getPromotedPropVars: getPromotedPropVars
+       
+    // };
 
     return {
         getPromotedProp: getPromotedProp

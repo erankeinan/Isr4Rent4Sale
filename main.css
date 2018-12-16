@@ -37,7 +37,7 @@ body{
   background-position: center;
 }
 
-#find{
+#find , #promoted-head{
   color: purple;
 }
 /*search Tab CSS: */

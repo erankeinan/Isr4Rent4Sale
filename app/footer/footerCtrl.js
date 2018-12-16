@@ -8,9 +8,9 @@ forRentApp.controller("footerCtrl", function($scope, promotedSrv, $location, $lo
 
     $scope.privacyModal = function() {
     
-    $("#privacyModal").modal({backdrop: true});
-    $("#privacyModal").modal({display: true});
-    }; 
+        $("#privacyModal").modal({backdrop: true});
+        $("#privacyModal").modal({display: true});
+        }; 
 
     $scope.termsModal = function() {
     
@@ -18,11 +18,20 @@ forRentApp.controller("footerCtrl", function($scope, promotedSrv, $location, $lo
         $("#termsModal").modal({display: true});
         }; 
 
+    $scope.openLogin = function() {
+        $("#loginModal").modal({backdrop: true});
+        $("#loginModal").modal({display: true});
+        };   
+
+
     $scope.contactModal = function() {
 
         $("#contactModal").modal({backdrop: true});
         $("#contactModal").modal({display: true});
         }; 
+
+
+
 
     function subValidateFields(){
 

@@ -72,4 +72,20 @@ $scope.toggleAddSearchBar = function() {
     }
 }
 
+
+$scope.searchForRent = function() {
+
+
+    // $scope.searchRooms = "0";
+    // $scope.searchPropType = "0";
+    // $scope.searchFurniture = "0";
+    // $scope.searchRoomMates = "1";
+    // $scope.searchDistance = "1";
+    // $scope.searchAdded = "1";
+    // $scope.searchSortby = "1";
+    // $scope.searchPropType = "1";
+    $location.path("/forRent");
+}
+
+
 });
