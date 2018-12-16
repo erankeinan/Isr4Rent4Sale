@@ -1,8 +1,8 @@
-forRentApp.controller("propCardsCtrl", function($scope, promotedSrv, $location, $log) {
+forRentApp.controller("propCardsCtrl", function($scope, propCardsSrv, $location, $log) {
     
     $scope.promoteds = [];
 
-    promotedSrv.getPromotedProp().then(function (promoteds) {
+    propCardsSrv.getPromotedProp().then(function (promoteds) {
         $scope.promoteds = promoteds;
     }, function(error) {
         $log.error(error);
