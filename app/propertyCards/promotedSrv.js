@@ -2,6 +2,10 @@ forRentApp.factory("promotedSrv", function($q, $http) {
 
 
     // var promoteds = {};
+    var promoteds = [];
+    var filteredpromoteds = []; 
+
+
 
     function Property(plainProp) {
         this.id = plainProp.id;
@@ -31,10 +35,9 @@ forRentApp.factory("promotedSrv", function($q, $http) {
     function getPromotedProp(){
         var async = $q.defer();
         var promotedInd = "1";
-
         
         var getPromotedPropURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties?promotedInd=" + promotedInd;
-        var promoteds = [];
+        promoteds = [];
 
         $http.get(getPromotedPropURL).then(function(response) {
             for (var i = 0; i < response.data.length; i++) {
