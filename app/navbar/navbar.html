@@ -19,10 +19,10 @@
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" ng-hide="isUserLoggedIn()">
-                <a class="nav-link" href="#!/login">Login</a>
+                <a class="nav-link" ng-click="openLogin()">Login</a>
             </li>
             <li class="nav-item" ng-hide="isUserLoggedIn()">
-                <a class="nav-link" href="#!/signup">Sign Up</a>
+                <a class="nav-link" ng-click="openSignup()">Sign Up</a>
             </li>
             <li class="nav-item" ng-show="isUserLoggedIn()">
                 <a class="nav-link" href="#" ng-click="logout()">Logout</a>
@@ -30,3 +30,52 @@
         </ul>
     </div>
 </nav>
+
+<!-- The Modal -->
+<div class="modal fade" id="loginModal" >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+            
+                <!-- Modal body -->
+                <div class="modal-body">
+                        <login-dir></login-dir>
+                </div>
+            
+                <!-- Modal footer -->
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div> -->
+        
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+
+<div class="modal fade" id="signupModal" >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+            
+                <!-- Modal body -->
+                <div class="modal-body">
+                        <signup-dir></signup-dir>
+
+                </div>
+            
+                <!-- Modal footer -->
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div> -->
+        
+            </div>
+        </div>
+    </div>

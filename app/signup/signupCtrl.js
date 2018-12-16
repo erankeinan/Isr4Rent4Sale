@@ -16,7 +16,8 @@ forRentApp.controller("signupCtrl", function($scope, $location, user) {
     //         $scope.invalidLogin = true;
     //     })
     // }
-
+    $scope.email = "";
+    $scope.pwd = "";
 
 
     function subValidateFields(){
