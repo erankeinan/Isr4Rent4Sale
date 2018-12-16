@@ -73,62 +73,58 @@ forRentApp.factory("propCardsSrv", function($q, $http) {
         
     } 
 
+    function prepareParamsObj(action, promotedInd, btype, type, minPrice, maxPrice, rooms, furniture){
+        filterParams = {};
 
-    // function filterProp(action, promotedInd, btype, type, minPrice, maxPrice, rooms, furniture){
+        if(action){filterParams.action = action;} 
+        if(promotedInd){ filterParams.promotedInd = promotedInd;}
+        if(btype) {filterParams.btype= btype;}
+        if(minPrice) {filterParams.minPrice= minPrice;}
+        if(maxPrice) {filterParams.maxPrice = maxPrice;}
+        if(furniture) {filterParams.furniture = furniture;}
+
+        // (minPrice? properties[i]. askingprice >=minPrice&&)
+        // (maxPrice? properties[i].askingprice <= maxPrice&&)
+        return filterParams;
+    }
+
+    function filterParams(filterParams) {
+        var filteredProps = [];
+        for (var i = 0; i < properties.length; i++) {
+            var match = true;
+            for (var filterParam in filterParams) {
+                if (filterParam === 'minPrice')
+                    { if (properties[i].askingprice <filterParams[filterParam])
+                        {
+                        match = false;
+                        break;
+                        } 
+                    } elseif (filterParam === 'maxPrice')
+                        { if (properties[i].askingprice >filterParams[filterParam])
+                            {
+                            match = false;
+                            break;
+                            }
+                        } elseif (properties[i][filterParam] !== filterParams[filterParam]) 
+                            {
+                            match = false;
+                            break;
+                            }                
+            }
+        if (match) filteredProps.push(properties[i]);
+        }
         
-    //     for (var i = 0; i < properties.length; i++) {
-    //         if (
-    //             (action? properties[i].action === action&&)
-    //             (promotedInd? properties[i].promotedInd === promotedInd&&)
-    //             (btype? properties[i].btype===btype&&)
-    //             (type? properties[i].type===type&&)
-    //             (minPrice? properties[i]. askingprice >=minPrice&&)
-    //             (maxPrice? properties[i].askingprice <= maxPrice&&)
-    //             (rooms? properties[i].rooms === rooms&&)
-    //             (furniture? properties[i].furniture === furniture&&)
-    //             1===1)
-            
-    //     }
-        
-    // }
+        return filteredProps;    
+    }
 
-
-    // function getPromotedPropVars(searchRooms, searchPropType, searchFurniture){
-    //     var async = $q.defer();
-    //     var promotedInd = "1";
-
-    //     var getPromotedPropURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties?promotedInd="+ promotedInd
-    //     + (searchRooms? "&rooms=" + searchRooms:'')
-    //     + (searchPropType? "&type=" + searchPropType:'')
-    //     + (searchFurniture? "&furniture=" + searchFurniture:"");
-
-    //     var promoteds = [];
-
-    //     $http.get(getPromotedPropURL).then(function(response) {
-    //         for (var i = 0; i < response.data.length; i++) {
-    //             var promoted = new Property(response.data[i]);
-    //             promoteds.push(promoted);
-    //         }
-    //         async.resolve(promoteds);
-    //     }, function(error) {
-    //         async.reject(error);
-    //     });    
     
-    //     return async.promise;
-
-        
-    // }
-
-    // return {
-    //     getPromotedProp: getPromotedProp,
-    //     getPromotedPropVars: getPromotedPropVars
-       
-    // };
+ //-------------------------------------
 
     return {
         getPromotedProp: getPromotedProp,
-        getAllProp: getAllProp
-       
+        getAllProp: getAllProp,
+        prepareParamsObj: prepareParamsObj,
+        filterParams: filterParams
     };
 
 })

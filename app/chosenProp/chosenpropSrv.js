@@ -5,14 +5,14 @@ forRentApp.factory("chosenpropSrv", function($http, $log, $q) {
         var async = $q.defer();   
         var propImages = [];
 
-        var propertImagesURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/propertyimages?propId=" + propid;
+        var propertImagesURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/propertyimages?propid=" + propid;
 
         console.log(" link: " + propertImagesURL);
 
         $http.get(propertImagesURL).then(function(response) {
 
             propImages = response.data[0].pimgs;                                
-            var prt = JSON.stringify(response);
+            var prt = JSON.stringify(propImages);
             console.log(prt);
 
             async.resolve(propImages);

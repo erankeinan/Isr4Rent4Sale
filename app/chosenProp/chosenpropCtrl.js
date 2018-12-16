@@ -8,7 +8,7 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
 
     // Selected specific property images  
     chosenpropSrv.getPropImages($routeParams.propId).then(function(propImages) {
-        console.log("inside " + $routeParams.propId);
+        console.log("inside getPropImages " + $routeParams.propId);
         
         $scope.propImages = propImages;
         var prt = JSON.stringify($scope.propImages);
@@ -20,7 +20,7 @@ forRentApp.controller("chosenpropCtrl", function($scope, $routeParams,chosenprop
 
 
     chosenpropSrv.getPropDtls($routeParams.propId).then(function(property) {
-        console.log("inside " + $routeParams.propId);
+        console.log("inside getPropDtls " + $routeParams.propId);
         $scope.property = property;
         if (property.action==='Rent') {$scope.rentInd = 'Monthly'}
         var prt = JSON.stringify($scope.property);

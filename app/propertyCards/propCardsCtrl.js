@@ -7,6 +7,7 @@ forRentApp.controller("propCardsCtrl", function($scope, propCardsSrv, $location,
     }, function(error) {
         $log.error(error);
     });
+    
     $scope.cardclick = function(promoted) {            
         var propid = promoted.id;
         $location.path("/chosenprop/" + propid);

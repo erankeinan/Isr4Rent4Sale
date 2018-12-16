@@ -1,3 +1,38 @@
 <navbar-rent-sale></navbar-rent-sale>
 
+<h2 id="Rent-head" class = "text-center">Rent search results</h2>
+
+<div class="container container-fluid ">
+    <h3 id="promoted-head" >Promoted properties</h3>
+    <div class="row my-6 card-columns" >
+        <div class="card bg-light col-sm-12 col-lg-3 mx-1"
+        ng-repeat="promoted in promoteds | filter : filterProp" ng-click = "cardclick(promoted)">
+            <div class = "card-title text-center capt">
+                <h4 >For {{promoted.action}}</h4>
+                <h5 >{{promoted.btype}} Property</h5>
+            </div>
+            <img class="card-img-top" ng-src={{promoted.mainPicture}} alt={{promoted.mainPicture}}>
+            <h5> Price: {{promoted.askingprice}} NIS monthly</h5>
+            <h6> {{promoted.city}}, {{promoted.street}}</h6>
+        </div>   
+    </div>   
+</div>   
+
+<div class="container container-fluid ">
+    <div class="row my-6 card-columns" >
+        <div class="card bg-light col 12" 
+        ng-repeat="filteredProp in filteredProps | filter : filterProp" ng-click = "cardclick(filteredProp)"></div>
+        </div>
+        <div class = "card-title text-center capt">
+            <h4 >{{filteredProp.btype}} Property</h4>
+        </div>
+        <div class = "col-4">
+            <img class="card-img-top" ng-src={{promoted.mainPicture}} alt={{promoted.mainPicture}}>
+        </div>
+
+    </div>
+</div>   
+
+
+
 <footer-dir></footer-dir>

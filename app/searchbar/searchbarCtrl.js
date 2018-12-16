@@ -1,4 +1,4 @@
-forRentApp.controller("searchbarCtrl", function($scope, user, $location) {
+forRentApp.controller("searchbarCtrl", function($scope, user, propCardsSrv, $location) {
     
     // $scope.isUserLoggedIn = function() {
     //     return user.isLoggedIn();
