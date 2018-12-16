@@ -4,7 +4,7 @@ forRentApp.factory("propCardsSrv", function($q, $http) {
     // var promoteds = {};
     var promoteds = [];
     var filteredpromoteds = []; 
-
+    var properties= [];
 
 
     function Property(plainProp) {
@@ -50,11 +50,48 @@ forRentApp.factory("propCardsSrv", function($q, $http) {
         });    
     
         return async.promise;
-
         
     }
 
+    function getAllProp(){
+        var async = $q.defer();
+        
+        var getPropURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties";
+        properties = [];
+
+        $http.get(getPromotedPropURL).then(function(response) {
+            for (var i = 0; i < response.data.length; i++) {
+                var property = new Property(response.data[i]);
+                properties.push(property);
+            }
+            async.resolve(properties);
+        }, function(error) {
+            async.reject(error);
+        });    
     
+        return async.promise;
+        
+    } 
+
+
+    // function filterProp(action, promotedInd, btype, type, minPrice, maxPrice, rooms, furniture){
+        
+    //     for (var i = 0; i < properties.length; i++) {
+    //         if (
+    //             (action? properties[i].action === action&&)
+    //             (promotedInd? properties[i].promotedInd === promotedInd&&)
+    //             (btype? properties[i].btype===btype&&)
+    //             (type? properties[i].type===type&&)
+    //             (minPrice? properties[i]. askingprice >=minPrice&&)
+    //             (maxPrice? properties[i].askingprice <= maxPrice&&)
+    //             (rooms? properties[i].rooms === rooms&&)
+    //             (furniture? properties[i].furniture === furniture&&)
+    //             1===1)
+            
+    //     }
+        
+    // }
+
 
     // function getPromotedPropVars(searchRooms, searchPropType, searchFurniture){
     //     var async = $q.defer();
@@ -89,7 +126,8 @@ forRentApp.factory("propCardsSrv", function($q, $http) {
     // };
 
     return {
-        getPromotedProp: getPromotedProp
+        getPromotedProp: getPromotedProp,
+        getAllProp: getAllProp
        
     };
 
