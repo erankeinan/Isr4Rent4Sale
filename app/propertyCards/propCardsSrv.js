@@ -59,7 +59,7 @@ forRentApp.factory("propCardsSrv", function($q, $http) {
         var getPropURL = "https://my-json-server.typicode.com/erankeinan/Isr4Rent4Sale/properties";
         properties = [];
 
-        $http.get(getPromotedPropURL).then(function(response) {
+        $http.get(getPropURL).then(function(response) {
             for (var i = 0; i < response.data.length; i++) {
                 var property = new Property(response.data[i]);
                 properties.push(property);
@@ -82,6 +82,8 @@ forRentApp.factory("propCardsSrv", function($q, $http) {
         if(minPrice) {filterParams.minPrice= minPrice;}
         if(maxPrice) {filterParams.maxPrice = maxPrice;}
         if(furniture) {filterParams.furniture = furniture;}
+        if(type) {filterParams.type = type;}
+        if(rooms) {filterParams.rooms = rooms;}
 
         // (minPrice? properties[i]. askingprice >=minPrice&&)
         // (maxPrice? properties[i].askingprice <= maxPrice&&)

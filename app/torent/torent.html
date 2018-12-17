@@ -17,9 +17,9 @@
         </div>   
     </div>   
 </div>   
-
+<div ng-hide = "true">{{action = 'Rent'}}</div>
 <div class="container container-fluid ">
-    <div class="row my-6 card-columns" >
+    <div class="row my-6 card-columns">
         <div class="card bg-light col 12" 
         ng-repeat="filteredProp in filteredProps | filter : filterProp" ng-click = "cardclick(filteredProp)"></div>
         </div>

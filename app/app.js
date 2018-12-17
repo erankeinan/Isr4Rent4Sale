@@ -12,7 +12,8 @@ forRentApp.config(function($routeProvider) {
         controller: "signupCtrl"
     }).when("/forRent", {
         templateUrl: "app/torent/torent.html",
-        controller: "torentCtrl"
+        controller: "propCardsCtrl"
+        // controller: "torentCtrl"
     }).when("/forSale", {
         templateUrl: "app/tosale/tosale.html",
         controller: "tosaleCtrl"
